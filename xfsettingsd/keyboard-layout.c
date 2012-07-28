@@ -368,5 +368,7 @@ xfce_keyboard_layout_reset_xkl_config (XklEngine *xklengine,
         xfce_keyboard_layout_helper_set_layout (helper);
         xfce_keyboard_layout_helper_set_variant (helper);
         xfce_keyboard_layout_helper_set_grpkey (helper);
+
+        xfce_keyboard_layout_helper_process_xmodmap ();
     }
 }
